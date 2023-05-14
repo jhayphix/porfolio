@@ -1,0 +1,97 @@
+/* 
+  |----------------------------------------
+  | Root
+  |----------------------------------------
+*/
+:root {
+  /* Colors */
+  --primary_color_1: #0a0e32; /* Background showcase */
+  --primary_color_2: rgba(12, 17, 56); /* Main features */
+  --primary_color_3: rgba(20, 28, 77); /* Footer */
+  --primary_color_4: #1e2242; /* Contact form */
+  --primary_color_5: #252c4f; /* Form input */
+
+  --secondary_color: #4d6fef;
+  --secondary_color_2: rgba(23, 33, 88);
+  --light_color: rgba(255, 255, 255);
+  --muted_color: rgba(149, 156, 176);
+
+  /* Animation */
+  --transition: all 500ms ease;
+}
+
+/* 
+  |----------------------------------------
+  | Background
+  |----------------------------------------
+*/
+
+/* Primary */
+.bg_primary_1 {
+  background-color: var(--primary_color_1) !important;
+  color: var(--light_color) !important;
+}
+.bg_primary_2 {
+  background-color: var(--primary_color_2) !important;
+  color: var(--light_color) !important;
+}
+.bg_primary_3 {
+  background-color: var(--primary_color_3) !important;
+  color: var(--light_color) !important;
+}
+.bg_primary_4 {
+  background-color: var(--primary_color_4) !important;
+  color: var(--light_color) !important;
+}
+.bg_primary_5 {
+  background-color: var(--primary_color_5) !important;
+  color: var(--light_color) !important;
+}
+
+/* Other */
+.bg_secondary {
+  background-color: var(--secondary_color) !important;
+  color: var(--light_color) !important;
+}
+.bg_secondary_2 {
+  background-color: var(--secondary_color_2) !important;
+  color: var(--light_color) !important;
+}
+.bg_light {
+  background-color: var(--light_color) !important;
+  color: black !important;
+}
+
+/* 
+  |----------------------------------------
+  | Text
+  |----------------------------------------
+*/
+
+/* Primary */
+.text_primary_1 {
+  color: var(--primary_color_1) !important;
+}
+.text_primary_2 {
+  color: var(--primary_color_2) !important;
+}
+.text_primary_3 {
+  color: var(--primary_color_3) !important;
+}
+.text_primary_4 {
+  color: var(--primary_color_4) !important;
+}
+.text_primary_5 {
+  color: var(--primary_color_5) !important;
+}
+
+/* Other */
+.text_secondary {
+  color: var(--secondary_color) !important;
+}
+.text_light {
+  color: var(--light_color) !important;
+}
+.text_muted {
+  color: var(--muted_color) !important;
+}

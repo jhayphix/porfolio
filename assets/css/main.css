@@ -1,0 +1,375 @@
+/* 
+  |----------------------------------------
+  | Navigation
+  |----------------------------------------
+*/
+#navbar {
+  transition: var(--transition);
+}
+/* Alternative for scroll */
+/* #navbar.on_scroll {
+  background: rgba(23, 33, 88, 0.5) !important;
+  box-shadow: 0 1px 1px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+} */
+#navbar.on_scroll {
+  background: url("../images/svg/animated_shape.svg") no-repeat center
+    center/cover !important;
+  border-radius: 10px;
+}
+.navbar-nav .nav-item {
+  border-bottom: 1px solid transparent;
+  margin-right: 1.5rem;
+}
+.navbar-nav .nav-item .nav-link {
+  color: var(--light_color);
+  font-weight: bold;
+  transition: var(--transition);
+}
+.navbar-nav .nav-item:hover .nav-link {
+  opacity: 0.6;
+}
+/* End of navigation */
+
+/* 
+  |------------------------------------------------
+  | About section
+  |------------------------------------------------
+*/
+#about-section #profile_info {
+  padding: 1rem;
+  background: rgba(37, 44, 79, 0.1);
+  box-shadow: 0 2px 1px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* 
+  |------------------------------------------------
+  | Hero section
+  |------------------------------------------------
+*/
+.hero_section_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.showcase_links_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 4rem;
+}
+
+.showcase_links_container a {
+  font-size: 1.5rem;
+}
+
+.showcase_links_container i {
+  color: var(--light_color);
+  text-align: center;
+}
+.showcase_links_container i:hover {
+  color: var(--secondary_color);
+}
+
+/* 
+  |------------------------------------------------
+  | Services section
+  |------------------------------------------------
+*/
+.ico-circle {
+  height: 100px;
+  width: 100px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px var(--secondary_color) !important;
+  display: block;
+}
+
+.service-box {
+  background-color: var(--primary_color_3) !important;
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  cursor: grab;
+}
+
+.service-box:hover .ico-circle {
+  transition: all 500ms ease;
+  color: #fff;
+  background-color: var(--secondary_color) !important;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.service-box .service-ico {
+  margin-bottom: 1rem;
+  color: var(--light_color);
+}
+
+.service-box .ico-circle {
+  transition: all 500ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-box .ico-circle i {
+  line-height: 0;
+  font-size: 40px;
+}
+
+/* ---------- End of services section */
+
+/* 
+|------------------------------------------------
+| Counter
+|------------------------------------------------
+*/
+
+.counter-box {
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 577px) {
+  .counter-box {
+    margin-bottom: 1.8rem;
+  }
+}
+
+.counter-ico {
+  margin-bottom: 1rem;
+}
+
+.counter-ico .ico-circle {
+  height: 60px;
+  width: 60px;
+  line-height: 1.5;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.counter-num .counter {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+/* 
+|------------------------------------------------
+| Portfolio
+|------------------------------------------------
+*/
+
+.work-box {
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: var(--primary_color_4);
+  /* box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.work-box:hover img {
+  transform: scale(1.3);
+}
+
+.work-img {
+  display: block;
+  overflow: hidden;
+}
+
+.work-img img {
+  transition: all 1s;
+  height: 10rem !important;
+  width: 100% !important;
+}
+
+.work-content {
+  padding: 2rem 3% 1rem 4%;
+}
+
+.work-content .w-more {
+  color: var(--muted_color);
+  font-size: 0.8rem;
+}
+
+.work-content .w-more .w-ctegory {
+  color: var(--light_color) !important;
+}
+
+.work-content .w-like {
+  font-size: 2.5rem;
+  color: var(--light_color) !important;
+  float: right;
+}
+
+.work-content .w-like a {
+  color: var(--light_color) !important;
+  transition: var(--transition);
+}
+
+.work-content .w-like a:hover {
+  color: var(--secondary_color) !important;
+}
+
+.work-content .w-like .num-like {
+  font-size: 0.7rem;
+}
+
+.w-title {
+  font-size: 1.2rem;
+}
+
+/* 
+|------------------------------------------------
+| Contact section
+|------------------------------------------------
+*/
+#contact-section form label {
+  padding-left: 1.5rem !important;
+}
+
+#contact-section form input,
+#contact-section form select {
+  background-color: var(--primary_color_5) !important;
+  color: var(--light_color) !important;
+  border: none !important;
+}
+#contact-section form textarea {
+  background-color: var(--primary_color_5) !important;
+  color: var(--light_color) !important;
+  border: none !important;
+}
+
+#contact-section .contact-links-container .link {
+  color: var(--light_color) !important;
+  font-size: 2rem;
+  padding: 0 0.5rem;
+}
+
+#contact-section .contact-links-container .link:hover {
+  color: var(--secondary_color) !important;
+}
+
+#contact-section .card-text .text_container {
+  margin: 1rem 0;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+.chat-on-whatsapp {
+  background-color: var(--secondary_color);
+  color: #fff;
+  border: 2px solid var(--secondary_color);
+  border-radius: 50%;
+  padding: 2rem;
+  width: 50px;
+  height: 50px;
+
+  position: fixed;
+  right: 15px;
+  bottom: 120px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: all 0.4s;
+  z-index: 996;
+
+  /* Display None */
+  visibility: hidden;
+  opacity: 0;
+}
+.chat-on-whatsapp:hover {
+  background-color: var(--primary_color_5);
+}
+.chat-on-whatsapp i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+  animation: chatOnWhatsapp 5s infinite;
+}
+.chat-on-whatsapp:hover i {
+  color: var(--secondary_color);
+  transform: rotate(-650deg);
+  transition: var(--transition);
+}
+
+@-webkit-keyframes chatOnWhatsapp {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(360deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes chatOnWhatsapp {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(360deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background-color: var(--primary_color_5) !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background-color: var(--secondary_color) !important;
+  color: #fff;
+}
+
+/* display block */
+
+.back-to-top.active,
+.chat-on-whatsapp.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Now */

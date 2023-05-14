@@ -1,0 +1,44 @@
+/* 
+|------------------------------------------------
+| Small screen only
+|------------------------------------------------
+*/
+
+/* Medium downward */
+@media only screen and (max-width: 770px) {
+  #navbar.on_scroll {
+    box-shadow: none !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: url("../images/svg/animated_shape.svg") no-repeat center
+      center/cover !important;
+    background-color: none !important;
+    border-radius: 10px;
+  }
+
+  #navbar {
+    height: 5rem;
+  }
+
+  #navbar .navbar-collapse {
+    position: relative;
+  }
+  #navbar .navbar-collapse .navbar-nav {
+    background: url("../images/mobile/mobile_animated_shape_trans_3.svg")
+      no-repeat center center/cover;
+    background-color: var(--primary_color_4) !important;
+    width: 20rem;
+    position: absolute;
+    top: 1.2rem;
+    right: 0;
+    padding: 2rem 0 2rem 2rem;
+    border-radius: 10px;
+  }
+
+  #hero-section {
+    height: 70vh !important;
+    background: url("../images/mobile/mobile_animated_shape_trans_4.svg")
+      no-repeat center center/cover !important;
+    background-color: var(--primary_color_1) !important;
+  }
+}
